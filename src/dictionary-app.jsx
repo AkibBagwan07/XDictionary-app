@@ -20,8 +20,8 @@ export default function DictionaryApp() {
 
   const handleInput = (e) => {
     setShow("");
-    const currText = e.target.value;
-    let lowerCase = currText.toLowerCase();
+    const searchText = e.target.value;
+    let lowerCase = searchText.toLowerCase();
     setText(lowerCase);
   };
 
