@@ -43,7 +43,7 @@ export default function DictionaryApp() {
       <h2>Dictionary App</h2>
       <input
         placeholder="Search for a word..."
-        onChange={handleInput}
+        onChange={(e)=>handleInput(e)}
         type="text"
         value={text}
       />
