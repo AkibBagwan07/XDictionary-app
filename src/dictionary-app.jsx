@@ -21,13 +21,12 @@ export default function DictionaryApp() {
   const handleInput = (e) => {
     setShow("");
     const searchText = e.target.value;
-    let lowerCase = searchText.toLowerCase();
-    setText(lowerCase);
+    setText(searchText);
   };
 
   const handleShow = () => {
     for (let i = 0; i < dictionary.length; i++) {
-      if (dictionary[i].word.toLowerCase() === text) {
+      if (dictionary[i].word.toLowerCase() === text.toLowerCase()) {
         setShow(dictionary[i].meaning);
         setAns(true);
         return;
@@ -40,7 +39,7 @@ export default function DictionaryApp() {
   return (
     <div>
       <title>title</title>
-      <h2>Dictionary App</h2>
+      <h1>Dictionary App</h1>
       <input
         type="text"
         placeholder="Search for a word..."
