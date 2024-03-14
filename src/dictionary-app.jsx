@@ -42,10 +42,10 @@ export default function DictionaryApp() {
       <title>title</title>
       <h2>Dictionary App</h2>
       <input
-        placeholder="Search for a word..."
-        onChange={(e)=>handleInput(e)}
         type="text"
+        placeholder="Search for a word..."
         value={text}
+        onChange={(e) => handleInput(e)}
       />
       <button onClick={handleShow}>Search</button>
       <br />
